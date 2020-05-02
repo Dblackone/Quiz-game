@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--TOTAL CONTENT-->
     <div class="">
     <!--HEADER-->
-        <div>
+        <div class="top">
             <header>
                 <p>My Quiz Game</p>
             </header>
@@ -18,16 +19,18 @@
         <div class="question-container">
     <!--SCORE BOARD-->
 
-            <div>
-                <p>Try and answer all the questions correctly</p>
-                <form action="">
-                    <label for="">Your Score</label>
-                    <input type="text">
-                </form>
+            <div class="question-top">
+                <div class="scoreboard">
+                    <p class="">Try and answer all the questions correctly</p>
+                    <form action="">
+                        <label for="">Your Score</label>
+                        <input type="text">
+                    </form>
+                </div>
             </div>
     <!--QUESTION-->
 
-            <form action="">
+            <form action="" id="quiz">
                 <div>
                     <h2>(1.) </h2>
                     <p>1.) </p><button type="submit">option 1</button>
@@ -42,16 +45,9 @@
     </div>
     <!--FOOTER-->
 
-    <div>
-        <footer class="footer-container">
-            <div class="footer-links">
-                <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
-                <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
-                <a href=""><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-            </div>         
-            <p class="w3-medium">Powered by <a href="" target="_blank">Samuria Developers</a></p>
-            <p class="w3-medium"> 2020||Samuria Dev.</p>
-        </footer>
-    </div>
+    <footer class="footer-container">       
+            <p class="">Powered by <a href="" target="_blank">Samuria Developers</a></p>
+            <p class=""> 2020||Samuria Dev.</p>
+    </footer>
 </body>
 </html>
