@@ -36,7 +36,7 @@ function showQuestion(question) {
     button.innerText = answer.text
     button.classList.add('btn')
     if (answer.correct) {
-      //button.dataset.correct = answer.correct;
+      button.dataset.correct = answer.correct;
     }
     button.addEventListener('click', selectAnswer)
     answerButtonsElement.appendChild(button)
