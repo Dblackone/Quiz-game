@@ -38,9 +38,9 @@ function showQuestion(question) {
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
-    else (answer.wrong) {
+    /*else (answer.wrong) {
       button.dataset.wrong = answer.wrong;
-    }
+    }*/
     button.addEventListener('click', selectAnswer)
     answerButtonsElement.appendChild(button)
   })
