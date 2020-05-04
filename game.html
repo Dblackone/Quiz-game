@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--TOTAL CONTENT-->
+    <div class="container">
+    <!--HEADER-->
+        <div class="top">
+            <header>
+                <p class="samuria-text">The Samuria Quiz Game</p>
+            </header>
+        </div>
+
+        <div class="question-container">
+    <!--SCORE BOARD-->
+
+            <div class="scoreboard">
+                <div id="scoreboard">
+                    <div id="scoreboard-item">
+                        <p class="hod-prefix">
+                            Question
+                        </p>
+                        <h1 class="scorcboard-text" id="questionCounter"></h1>
+                    </div>
+                    <div id="scoreboard-item">
+                        <p class="score">
+                            Your Score
+                        </p>
+                        <h1 class="scorcboard-text" id="score">
+                            0
+                        </h1>
+                    </div>
+                </div>
+            </div>
+    <!--QUESTION-->
+
+            <div class="quiz-container hide" id="question-container">
+                <div id="question">question</div>
+                <div id="answer-buttons">
+                    <button class="btn">option 1</button>
+                    <button class="btn">option 2</button>
+                    <button class="btn">option 3</button>
+                </div>
+            </div>
+            <div class="contorls">
+                <button type="submit" class="start-button" id="start-btn">start</button>
+                <button type="submit" class="next-button hide" id="next-btn">next</button>
+            </div>
+            <div class="result hide" id="passed">
+                <p>You passed and know the way of a samuria</p>
+                <p>You desvere a glorious death in battle</p>
+            </div>
+            <div class="result hide" id="barely-passed">
+                <p>You barely passed and need to reacliam yorself with the Bushido</p>
+                <p>You are not fit for battle battle</p>
+            </div>
+            <div class="result hide" id="failed">
+                <p>You failed and you disgrased the samuria name</p>
+                <p>You should commit seppuku before  the sunset tomorrow</p>
+                <p>Note; Seppuku (Japanese: 切腹, "cutting [the] belly"), sometimes referred 
+                    to as harakiri (腹切り, "abdomen/belly cutting"),
+                     is a form of Japanese ritual suicide by disembowelment.</p>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+
+    <footer class="footer-container bottom">       
+            <p class="">Powered by <a href="" target="_blank">Samuria Developers</a></p>
+            <p class=""> 2020||Samuria Dev.</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>

@@ -29,6 +29,26 @@ body {
 .bottom{
     bottom: 0;
 }
+.start-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: whitesmoke;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.home {
+    margin: .5em auto;
+}
 .question-container {
     margin: .5em;
     padding: .5em;
@@ -56,6 +76,7 @@ body {
     width: 100%;
 }
 .intro {
+    margin: 1em auto;
     text-align: center;
     font-family: 'IM Fell DW Pica', serif;
     font-size: 16px;
@@ -79,6 +100,29 @@ body {
     border-bottom-left-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+/*SCORE BOARD*/
+#hod {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hd-prefix {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .hod-main-text {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  #hod-item {
+    border: 0.1rem solid #a764ff;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
 :root {
     --hue-neutral: white;
     --hue-wrong: red;
@@ -123,7 +167,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.start-button {
+.start-btn {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -194,5 +238,31 @@ body {
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
         width: 40vw;
+    }
+    .start-container {
+        width: 40vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: .5rem;
+        background-color: whitesmoke;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .center {
+        justify-content: center;
+        align-items: center;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    .home {
+        margin: .5em auto;
     }
 }
