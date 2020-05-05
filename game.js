@@ -69,6 +69,14 @@ startQuiz = () => {
   getNewQuestion();
 };
 
+function resetState() {
+  clearStatusClass(document.body)
+  nextButton.classList.add('hide')
+  while (answerButtonsElement.firstChild) {
+    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+  }
+}
+
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= Max_Questions) {
     localStorage.setItem("mostRecentScore", score);
@@ -120,16 +128,15 @@ options.forEach((option) => {
       }
     }
 
-    setTimeout(() => {
-      quizOption1.classList.remove("correct");
-      quizOption2.classList.remove("correct");
-      quizOption3.classList.remove("correct");
-      quizOption4.classList.remove("correct");
-      selectedOption.classList.remove(classToApply);
-      getNewQuestion();
-    }, 650);
+    selectedOption.classList.remove(classToApply);
+    clearStatusClass(document.body);
   });
 });
+
+function clearStatusClass(element) {
+  element.classList.remove('correct')
+  element.classList.remove('wrong')
+}
 
 nextButton.addEventListener("click", (event) => {
   getNewQuestion();

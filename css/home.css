@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+.samuria-text {
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 32px;
+}
+
+/* containers */
+.start-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    padding-bottom: 2em;
+    background-color: whitesmoke;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*IMAGES*/
+.c-img {
+    margin: 1em auto;
+}
+.q-img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+/* buttons */
+.start-btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 8px;
+    width: 20%;
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+
+@media (min-width: 769px) {
+    /* containers */
+    .start-container {
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em auto;
+        padding-bottom: 2em;
+        background-color: whitesmoke;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+        /* buttons */
+        .start-btn {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-bottom-right-radius: 16px;
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+            border-top-right-radius: 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 8px;
+            width: 20%;
+            margin-left: 40%;
+            cursor: pointer;
+        }
+
+        /*IMAGES*/
+    .c-img {
+        margin: 1em auto;
+        width: 150px;
+        height: 150px;
+    }
+    .q-img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+    }
+        
+}

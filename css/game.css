@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+/* container */
+.quiz-container {
+    font-family: 'Walter Turncoat', Arial, Helvetica, sans-serif;
+    margin: .5em;
+    padding: .5em;
+    background-color: whitesmoke;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.question-container {
+    margin: 1.5em;
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.scoreboard-container {
+    margin: .5em;
+    padding: 1em;
+    background-color: rgb(136, 133, 133);
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*SCORE BOARD*/
+#scoreboard{
+    display: flex;
+    justify-content: space-between;
+}
+.prefix {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'IM Fell DW Pica', serif;
+}
+.scoreboard-text {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Walter Turncoat', Arial, Helvetica, sans-serif;
+}
+.item-1,.item-2 {
+    background-color: whitesmoke;
+    padding: .5rem;
+    text-align: center;
+}

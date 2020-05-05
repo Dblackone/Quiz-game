@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+* result */
+.score-container {
+    background-color: white;
+    color: black;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px black solid;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.result-container {
+    font-family: 'Walter Turncoat', Arial, Helvetica, sans-serif;
+    background-image: url(/images/3.jpg);
+    background-size: 150px;
+    width: 85vw;
+    margin: 1.2em;
+    padding-top: 1em;
+    padding: .5em;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.note-container {
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.result {
+    background-color: whitesmoke;
+}
