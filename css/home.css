@@ -2,9 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 
+.center {
+    text-align: center;
+}
 .samuria-text {
     font-family: 'IM Fell DW Pica', serif;
     font-size: 32px;
+}
+/*TEXTS*/
+.intro {
+    margin: 1em auto;
+    text-align: center;
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 16px;
 }
 
 /* containers */
@@ -26,6 +36,8 @@
 /*IMAGES*/
 .c-img {
     margin: 1em auto;
+    width: 100px;
+    height: 100px;
 }
 .q-img {
     border-radius: 50%;

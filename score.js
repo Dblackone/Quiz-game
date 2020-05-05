@@ -9,8 +9,8 @@ const youPassed = document.getElementById("passed");
 
  if (mostRecentScore < 6) {
     youFailed.classList.remove('hide');
- } else if (finalScore === 6) {
+ } else if (mostRecentScore == 6) {
      youBarelyPassed.classList.remove('hide');
- } else if (finalScore > 6) {
+ } else if (mostRecentScore > 6) {
      youPassed.classList.remove('hide');
  }

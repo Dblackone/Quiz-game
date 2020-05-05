@@ -141,13 +141,13 @@ body {
     cursor: pointer;
 }
 
-.btn.correct {
+.correct {
     color: white;
     background-color: green;
     border: 2px solid green;
 }
 
-.btn.wrong {
+.wrong {
     color: white; 
     background-color: red;
     border: 2px solid #f44336;
