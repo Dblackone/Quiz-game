@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 
-*{
+*, p {
     margin: 0;
     padding: 0;
 }
@@ -29,6 +29,8 @@ body {
 .bottom{
     bottom: 0;
 }
+
+/*CONTAINERS*/
 .start-container {
     width: 100vw;
     height: 100vh;
@@ -45,7 +47,17 @@ body {
     border-bottom-left-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
+.quiz-container {
+    font-family: 'Walter Turncoat', Arial, Helvetica, sans-serif;
+    margin: .5em;
+    padding: .5em;
+    background-color: whitesmoke;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 .home {
     margin: .5em auto;
 }
@@ -58,15 +70,26 @@ body {
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
-.question-top {
+.scoreboard-container {
     margin: .5em;
-    background-color: whitesmoke;
+    padding: 1em;
+    background-color: black;
     border-bottom-right-radius: 8px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.footer-container {
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+/*IMAGES*/
 .c-img {
     margin: 1em auto;
 }
@@ -75,59 +98,42 @@ body {
     height: 100%;
     width: 100%;
 }
+/*TEXTS*/
 .intro {
     margin: 1em auto;
     text-align: center;
     font-family: 'IM Fell DW Pica', serif;
     font-size: 16px;
 }
-.scoreboard {
-    padding-top: .8em;
-    padding-bottom: .8em;
-    padding-left: .5em;
-}
-.scoreboard p {
-    margin-bottom: .5em;
-}
-.quiz-container {
-    font-family: 'Walter Turncoat', Arial, Helvetica, sans-serif;
-    margin: .5em;
-    padding: .5em;
-    background-color: whitesmoke;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+
+
 /*SCORE BOARD*/
-#hod {
+#scoreboard{
     display: flex;
     justify-content: space-between;
-  }
-  
-  .hd-prefix {
+}
+.hd-prefix {
     text-align: center;
     font-size: 2rem;
-  }
-  
-  .hod-main-text {
+}
+.scoreboard-text {
     font-size: 3rem;
     text-align: center;
     margin: 0;
-  }
-  
-  #hod-item {
-    border: 0.1rem solid #a764ff;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-:root {
-    --hue-neutral: white;
-    --hue-wrong: red;
-    --hue-correct: green;
 }
+.item-1 {
+    background-color: grey;
+    margin-bottom: .5em;
+    padding: 1rem;
+}
+.item-2 {
+    background-color: grey;
+    margin-bottom: .5em;
+    padding: 1rem;
+}
+
+/*BACKGROUND IMAGE*/
+
 .hero {
     background: #307d99 url('/images/1.jpg');
     background-size: 480px;
@@ -141,20 +147,21 @@ body {
     display: none;
 }
 
+/* buttons */
 .btn {
     background-color: white; 
     color: black; 
-    border: 2px solid grey;
-    padding: .5em 1em;
+    border: 1px solid grey;
     border-bottom-right-radius: 8px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     text-align: center;
+    width: 90%;
     text-decoration: none;
     display: inline-block;
-    width: 90%;
     font-size: 16px;
+    padding: .5em;
     margin: .5em 1em;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -168,7 +175,7 @@ body {
     align-items: center;
 }
 .start-btn {
-    background-color: #4CAF50;
+    background-color: black;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -182,9 +189,8 @@ body {
     margin: 1em 2em 1em 2em;
     cursor: pointer;
 }
-
 .next-button {
-    background-color: #4CAF50;
+    background-color: black;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -215,15 +221,10 @@ body {
 
 #answer-buttons {
     display: block;
+    margin-top: 1em;
 }
 
-.footer-container {
-    padding-top: 2em;
-    padding-bottom: 1.5em;
-    text-align: center;
-    background-color: black;
-    color: white;
-}
+
 
 @media only screen and (min-width:426px) {
     body {

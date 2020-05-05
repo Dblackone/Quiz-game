@@ -16,22 +16,7 @@
             </header>
         </div>
 
-        <div class="question-container">
-    <!--SCORE BOARD-->
-
-            <div class="question-top">
-                <div class="scoreboard">
-                    <div class="c-img" style="height: 100px; width: 100px;">
-                        <img src="/images/2.jpg" alt="" class="q-img">
-                    </div>
-                    <p class="intro">Want to know how much of a samuria you are take this quiz</p>
-                    <form action="" class="hide">
-                        <label for="">Your Score</label>
-                        <input type="text">
-                        <p id="progress">Question x of y</p>
-                    </form>
-                </div>
-            </div>
+        <div class="result-container">
     <!--RESULTS-->
 
             <div class="result" id="passed">
@@ -49,10 +34,14 @@
                     to as harakiri (腹切り, "abdomen/belly cutting"),
                      is a form of Japanese ritual suicide by disembowelment.</p>
             </div>
-            <div id="home" class="start-container"> 
-                <h2></h2>
-                <a href="index.html" class="btn">TRY AGAIN</a>
-            </div>
+            <div class="container">
+                <div id="end" class="flex-center flex-column">
+                  <label>You Scored</label>
+                  <h1 id="finalScore"></h1>
+                  <a href="game.html" class="btn">Try Again :)</a>
+                  <a href="index.html" class="btn">Home</a>
+                </div>
+              </div>
     
         </div>
     </div>
