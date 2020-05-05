@@ -2,7 +2,7 @@ const question = document.getElementById("question");
 const nextButton = document.getElementById("next-btn");
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
-const options = Array.from(document.getElementsByClassName("options-text"));
+const options = Array.from(document.getElementsByClassName("option"));
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -101,13 +101,13 @@ options.forEach((option) => {
     const selectedAnswer = selectedOption.dataset["number"];
 
     const classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+      selectedAnswer == currentQuestion.answer ? "correct" : "wrong";
 
     if (classToApply === "correct") {
       increaseScore(Correct_Point);
-      selectedOption.parentElement.classList.add(classToApply);
+      selectedOption.classList.add(classToApply);
     } else {
-      selectedOption.parentElement.classList.add(classToApply);
+      selectedOption.classList.add(classToApply);
 
       if (currentQuestion.answer === 1) {
         quizOption1.classList.add("correct");
@@ -125,7 +125,7 @@ options.forEach((option) => {
       quizOption2.classList.remove("correct");
       quizOption3.classList.remove("correct");
       quizOption4.classList.remove("correct");
-      selectedOption.parentElement.classList.remove(classToApply);
+      selectedOption.classList.remove(classToApply);
       getNewQuestion();
     }, 650);
   });

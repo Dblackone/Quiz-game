@@ -19,27 +19,28 @@
         <div class="result-container">
     <!--RESULTS-->
 
-            <div class="result" id="passed">
+            <div class="result hide" id="passed">
                 <p>You passed and know the way of a samuria</p>
                 <p>You desvere a glorious death in battle</p>
             </div>
-            <div class="result" id="barely-passed">
+            <div class="result hide" id="barely-passed">
                 <p>You barely passed and need to reacliam yorself with the Bushido</p>
                 <p>You are not fit for battle battle</p>
             </div>
-            <div class="result" id="failed">
+            <div class="result hide" id="failed">
                 <p>You failed and you disgrased the samuria name</p>
                 <p>You should commit seppuku before  the sunset tomorrow</p>
-                <p>Note; Seppuku (Japanese: 切腹, "cutting [the] belly"), sometimes referred 
+                <p class="note-container">Note; Seppuku (Japanese: 切腹, "cutting [the] belly"), sometimes referred 
                     to as harakiri (腹切り, "abdomen/belly cutting"),
                      is a form of Japanese ritual suicide by disembowelment.</p>
             </div>
-            <div class="container">
+            <div class="">
                 <div id="end" class="flex-center flex-column">
-                  <label>You Scored</label>
+                <div class="score-container"><label>You Scored</label>
                   <h1 id="finalScore"></h1>
-                  <a href="game.html" class="btn">Try Again :)</a>
-                  <a href="index.html" class="btn">Home</a>
+                </div>
+                  <a href="game.html" class="end-btn">Try Again</a>
+                  <a href="index.html" class="end-btn">Home</a>
                 </div>
               </div>
     
@@ -51,6 +52,6 @@
             <p class="">Powered by <a href="" target="_blank">Samuria Developers</a></p>
             <p class=""> 2020||Samuria Dev.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="score.js"></script>
 </body>
 </html>

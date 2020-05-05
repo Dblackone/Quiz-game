@@ -6,7 +6,7 @@
     padding: 0;
 }
 body {
-    background: #307d99 url('/images/1.jpg');
+    background:white url('/images/1.jpg');
     background-size: 480px;
     background-position: 20% 80%;
     margin: 0;
@@ -87,6 +87,19 @@ body {
     background-color: black;
     color: white;
 }
+.score-container {
+    background-color: white;
+    color: black;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px black solid;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
 
 
 /*IMAGES*/
@@ -135,7 +148,7 @@ body {
 /*BACKGROUND IMAGE*/
 
 .hero {
-    background: #307d99 url('/images/1.jpg');
+    background: white url('/images/1.jpg');
     background-size: 480px;
     color: white;
     background-position: 20% 80%;
@@ -168,6 +181,24 @@ body {
 }
 .btn:hover {
     background-color: grey;
+}
+.end-btn {
+    background-color: white; 
+    color: black; 
+    border: 1px solid grey;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    text-align: center;
+    width: 20%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: .5em;
+    margin: .5em 1em;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 .contorls {
     display: flex;
@@ -203,13 +234,13 @@ body {
     cursor: pointer;
 }
 
-.btn.correct {
+.correct {
     color: white;
     background-color: green;
     border: 2px solid green;
 }
 
-.btn.wrong {
+.wrong {
     color: white; 
     background-color: red;
     border: 2px solid #f44336;
@@ -222,6 +253,31 @@ body {
 #answer-buttons {
     display: block;
     margin-top: 1em;
+}
+.result-container {
+    font-family: 'Walter Turncoat', Arial, Helvetica, sans-serif;
+    background-image: url(/images/3.jpg);
+    background-size: 520px;
+    margin: .5em;
+    padding-top: 1em;
+    padding: .5em;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.note-container {
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.result {
+    background-color: whitesmoke;
 }
 
 
@@ -265,5 +321,18 @@ body {
     }
     .home {
         margin: .5em auto;
+    }
+    .result-container {
+        font-family: 'Walter Turncoat', Arial, Helvetica, sans-serif;
+        text-align: center;
+        width: 40vw;
+        margin: .5em auto;
+        padding: 4em 1em ;
+        background-color: whitesmoke;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
 }
