@@ -6,7 +6,7 @@
     padding: 0;
 }
 body {
-    background:white url('/images/1.jpg');
+    background:white url('https://res.cloudinary.com/start-ng/image/upload/v1588787331/1_hwinky.jpg');
     background-size: 480px;
     background-position: 20% 80%;
     margin: 0;
@@ -28,14 +28,15 @@ body {
     top: 0;
 }
 .footer{
+    margin-top: 64px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100vw;
     background-color: black;
     color: whitesmoke;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
     text-align: center;
 }
 
