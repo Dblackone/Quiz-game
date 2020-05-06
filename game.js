@@ -59,6 +59,8 @@ let questions = [
       answer: 2,
     },
 ];
+
+
 const Correct_Point = 2;
 const Max_Questions = 5;
 
@@ -68,14 +70,6 @@ startQuiz = () => {
   availableQuestions = [...questions];
   getNewQuestion();
 };
-
-function resetState() {
-  clearStatusClass(document.body)
-  nextButton.classList.add('hide')
-  while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
-  }
-}
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= Max_Questions) {
@@ -113,9 +107,9 @@ options.forEach((option) => {
 
     if (classToApply === "correct") {
       increaseScore(Correct_Point);
-      selectedOption.classList.add(classToApply);
+      selectedOption.parentElement.classList.add(classToApply);
     } else {
-      selectedOption.classList.add(classToApply);
+      selectedOption.parentElement.classList.add(classToApply);
 
       if (currentQuestion.answer === 1) {
         quizOption1.classList.add("correct");
@@ -128,15 +122,16 @@ options.forEach((option) => {
       }
     }
 
-    selectedOption.classList.remove(classToApply);
-    clearStatusClass(document.body);
+    setTimeout(() => {
+      quizOption1.classList.remove("correct");
+      quizOption2.classList.remove("correct");
+      quizOption3.classList.remove("correct");
+      quizOption4.classList.remove("correct");
+      selectedOption.parentElement.classList.remove(classToApply);
+      getNewQuestion();
+    }, 650);
   });
 });
-
-function clearStatusClass(element) {
-  element.classList.remove('correct')
-  element.classList.remove('wrong')
-}
 
 nextButton.addEventListener("click", (event) => {
   getNewQuestion();
@@ -148,4 +143,3 @@ increaseScore = (num) => {
 };
 
 startQuiz();
-  
