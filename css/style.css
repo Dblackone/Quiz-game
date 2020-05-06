@@ -27,15 +27,16 @@ body {
     width: 100vw;
     top: 0;
 }
-.bottom{
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
     background-color: black;
     color: whitesmoke;
     padding-top: .5em;
     padding-bottom: .5em;
     text-align: center;
-    position: relative;
-    width: 100vw;
-    bottom: 0;
 }
 
 /*CONTAINERS*/
@@ -141,17 +142,7 @@ body {
     cursor: pointer;
 }
 
-.correct {
-    color: white;
-    background-color: green;
-    border: 2px solid green;
-}
 
-.wrong {
-    color: white; 
-    background-color: red;
-    border: 2px solid #f44336;
-}
 .disabled {
     opacity: 0.6;
     cursor: not-allowed;
